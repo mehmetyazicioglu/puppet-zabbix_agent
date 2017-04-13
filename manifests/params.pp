@@ -20,7 +20,7 @@ $zserver='10.4.4.97'
             $file_conf      = ''
 	    }
 	    default: {
-		    fail("Modulo Zabbixagent nao suportado pelo sistema: ${::osfamily}")
+		    fail("this module does not support: ${::osfamily}")
 	    }
     }
 
