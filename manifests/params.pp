@@ -13,12 +13,6 @@ $zserver='10.4.4.97'
 		    $file_conf 	    = '/etc/zabbix/zabbix_agentd.conf' 
             $template       = 'zabbixagent/zabbix_agentd.conf.erb'
 	    }
-	    RedHat: {
-		    $package_name   = ''
-            $service_name   = ''
-            $folder_log     = ''
-            $file_conf      = ''
-	    }
 	    default: {
 		    fail("this module does not support: ${::osfamily}")
 	    }
